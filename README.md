@@ -13,7 +13,7 @@ Wireshark” Lab if you’re uncertain about the Wireshark windows).
 ##### Jawaban
 
 
-IP = 192.168.86.68
+IP = 192.168.86.68 <br>
 Port = 55639
 
 
@@ -24,7 +24,7 @@ and receiving TCP segments for this connection?
 ##### Jawaban
 
 
-IP = 128.119.245.12
+IP = 128.119.245.12 <br>
 Port = 80
 
 
@@ -44,8 +44,8 @@ receiver, see section 3.4.5 in the text)?
 ##### Jawaban
 
 
-Sequence raw = 4236649187
-Flag 0x002 mengidentifikasi segment sebagai SYN
+Sequence raw = 4236649187 <br>
+Flag 0x002 mengidentifikasi segment sebagai SYN <br>
 Iya, karena sack diijinkan di paket
 
 
@@ -59,10 +59,10 @@ determine that value?
 ##### Jawaban
 
 
-Sequence Number : 1068969752
-Karena di flag ada SYN dan ACK
-Acknowledgment number : 4236649188
-Dari nomer syn sebelumnya ditambah 1
+Sequence Number : 1068969752 <br>
+Karena di flag ada SYN dan ACK <br>
+Acknowledgment number : 4236649188 <br>
+Dari nomer syn sebelumnya ditambah 1 
 
 
 ### Soal 5
@@ -77,9 +77,9 @@ segment?
 ##### Jawaban
 
 
-Sequence Number: 152041
-Sequence Number (raw): 4236801228
-TCP payload (1385)
+Sequence Number: 152041 <br>
+Sequence Number (raw): 4236801228 <br>
+TCP payload (1385) <br>
 Tidak
 
 
@@ -96,10 +96,10 @@ ACK for the second data-carrying segment is received? Assume that in
 making this calculation after the received of the ACK for the second segment,
 
 ##### Jawaban
-0.24047
-0.052671
-0.028624000
-0.028628000
+0.24047 <br>
+0.052671 <br>
+0.028624000 <br>
+0.028628000 <br>
 
 
 ### Soal 7 
@@ -115,7 +115,7 @@ gaia.cs.umass.edu among these first four data-carrying TCP segments7? Does the
 lack of receiver buffer space ever throttle the sender for these first four datacarrying segments?
 
 ##### Jawaban
-Win = 131712
+Win = 131712 <br>
 Tidak, karena nilai win selalu lebih besar dari length
 
 ### Soal 9 
@@ -123,7 +123,7 @@ Are there any retransmitted segments in the trace file? What did you check for (
 the trace) in order to answer this question?
 
 ##### Jawaban
-Ada
+Ada <br>
 Ada paket yang sequence number paket selanjutnya tidak lebih besar dari sequence number paket sebelumnya.
 
 ### Soal 10
@@ -133,7 +133,7 @@ you identify cases where the receiver is ACKing every other received segment
 (see Table 3.2 in the text) among these first ten data-carrying segments?
 
 ##### Jawaban
-1448 byte
+1448 byte <br>
 Paket 6 memiliki 4344 byte yang berasal dari frame frame sebelumnya
 
 ### Soal 11
