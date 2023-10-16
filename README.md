@@ -185,7 +185,7 @@ Explain how you calculated this value.
 
 ##### Jawaban
 
-## Pembahasan Soal UDP
+## UDP
 
 ### Soal 1
 Select the first UDP segment in your trace. What is the packet number4 of this
@@ -196,7 +196,11 @@ look in the textbook! Answer these questions directly from what you observe in
 the packet trace.) What are the names of these fields?
 
 ##### Jawaban
+![1u](no1udp.png)
 
+No Paket : 5 <br>
+SSDP <br>
+4 field, source port, destination port, length, dan checksum
 
 
 ### Soal 2
@@ -205,14 +209,20 @@ this packet (or by consulting the textbook), what is the length (in bytes) of ea
 the UDP header fields?
 
 ##### Jawaban
+8 byte, 2 byte untuk setiap field
+
 
 ### Soal 3
 The value in the Length field is the length of what? (You can consult the text for
 this answer). Verify your claim with your captured UDP packet. 
 
 ##### Jawaban
+![3u](no3udp.png)
 
-
+Field length merupakan panjang keseluruhan segmen UDP dari header dan payload <br>
+Header = 8 <br>
+Payload = 275 <br>
+Field length = 275+8 = 283
 
 
 ### Soal 4
@@ -220,13 +230,16 @@ What is the maximum number of bytes that can be included in a UDP payload?
 (Hint: the answer to this question can be determined by your answer to 2. above)
 
 ##### Jawaban
+Maximum value for a 16-bit field = 65,535 <br>
+UDP headers = 8 <br>
+The maximum payload size : 65,535 – 8 = 65,527 
 
 
 ### Soal 5
 What is the largest possible source port number? (Hint: see the hint in 4.)
 
 ##### Jawaban
-
+2^16 - 1 = 65535, karena port direpresentasikan dengan 16 bit
 
 ### Soal 6
 What is the protocol number for UDP? Give your answer in decimal notation. To
@@ -235,7 +248,8 @@ containing this UDP segment (see Figure 4.13 in the text, and the discussion of 
 header fields). 
 
 ##### Jawaban
-
+![6u](no6udp.png)
+17
 
 ### Soal 7
 Examine the pair of UDP packets in which your host sends the first UDP packet
@@ -247,3 +261,8 @@ second of these two UDP segments in the trace file? Describe the relationship
 between the port numbers in the two packets. 
 
 ##### Jawaban
+![7u](no7udp.png)
+15 <br>
+17 <br>
+ip src paket 15 merupakan ip dest pakett 17 dan sebaliknya
+
