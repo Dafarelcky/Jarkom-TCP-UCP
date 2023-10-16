@@ -11,7 +11,7 @@ selected packet header window” (refer to Figure 2 in the “Getting Started wi
 Wireshark” Lab if you’re uncertain about the Wireshark windows).
 
 ##### Jawaban
-
+![1](no1.png)
 
 IP = 192.168.86.68 <br>
 Port = 55639
@@ -22,7 +22,7 @@ What is the IP address of gaia.cs.umass.edu? On what port number is it sending
 and receiving TCP segments for this connection?
 
 ##### Jawaban
-
+![2](no2.png)
 
 IP = 128.119.245.12 <br>
 Port = 80
@@ -42,7 +42,7 @@ Acknowledgments (allowing TCP to function a bit more like a “selective repeat�
 receiver, see section 3.4.5 in the text)?
 
 ##### Jawaban
-
+![3](no3.png)
 
 Sequence raw = 4236649187 <br>
 Flag 0x002 mengidentifikasi segment sebagai SYN <br>
@@ -57,7 +57,7 @@ Acknowledgement field in the SYNACK segment? How did gaia.cs.umass.edu
 determine that value? 
 
 ##### Jawaban
-
+![4](no4.png)
 
 Sequence Number : 1068969752 <br>
 Karena di flag ada SYN dan ACK <br>
@@ -75,7 +75,7 @@ TCP segment? Did all of the data in the transferred file alice.txt fit into this
 segment?
 
 ##### Jawaban
-
+![5](no5.png)
 
 Sequence Number: 152041 <br>
 Sequence Number (raw): 4236801228 <br>
@@ -96,10 +96,15 @@ ACK for the second data-carrying segment is received? Assume that in
 making this calculation after the received of the ACK for the second segment,
 
 ##### Jawaban
+![6a](no6_1.png)
+![6b](no6_2.png)
+![6c](no6_3.png)
+
+
 0.24047 <br>
 0.052671 <br>
 0.028624000 <br>
-0.028628000 <br>
+0.028628000 
 
 
 ### Soal 7 
@@ -107,6 +112,8 @@ What is the length (header plus payload) of each of the first four data-carrying
 TCP segments?
 
 ##### Jawaban
+![7](no7.png)
+
 4 (Header + Payload) = 4 (32 + 1448) = 4 (1480) = 5920 byte
 
 ### Soal 8 
@@ -115,6 +122,8 @@ gaia.cs.umass.edu among these first four data-carrying TCP segments7? Does the
 lack of receiver buffer space ever throttle the sender for these first four datacarrying segments?
 
 ##### Jawaban
+![8](no8.png)
+
 Win = 131712 <br>
 Tidak, karena nilai win selalu lebih besar dari length
 
@@ -133,6 +142,8 @@ you identify cases where the receiver is ACKing every other received segment
 (see Table 3.2 in the text) among these first ten data-carrying segments?
 
 ##### Jawaban
+![10](no10.png)
+
 1448 byte <br>
 Paket 6 memiliki 4344 byte yang berasal dari frame frame sebelumnya
 
